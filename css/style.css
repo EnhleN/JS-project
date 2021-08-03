@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+.bg-image{
+    background-image: url("../images/connections.jpg");
+    height: 100vh;
+    filter: blur(2px);
+    /* -webkit-filter: blur(4px); */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

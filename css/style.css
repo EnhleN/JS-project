@@ -11,3 +11,65 @@ body{
     background-position: center;
     background-size: cover;
 }
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120 auto) repeat(5, 100px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+}
+.calculator-grid>button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color:hotpink;
+    height: 40px;
+    transition: background-color .5s;
+    border-radius: 50px;
+
+}
+.calculator-grid>button:hover{
+    background-color: darkblue;
+    color: gold;
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/-1;
+    background-color: darkmagenta;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+}
+.output .previous-operand{
+    color: darkorchid;
+    font-size: 1.5rem;
+}
+.output .current-operand{
+    color: deepskyblue;
+    font-size: 1.5rem;
+}
+/*coming soon style*/
+.soon{
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+
+}
